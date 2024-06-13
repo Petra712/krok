@@ -3,15 +3,21 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Steps Tracker</title>
+    <title>Krok</title>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
     <div class="container">
     <div class="header">
-        <div class="iconhore user"></div>
-        <div class="iconhore help"></div>
+        <div class="iconhore user"></div> <div class="progress-container">
+            <div class="progress-bar" id="progress-bar"></div>
         </div>
+        <div class="iconhore help" id="help-icon"></div>
+        </div>
+
+
+       
+
         <div class="content">
         <div class="background"> <img src="img/SVG/cloveknieikona.svg" alt="human" class="human"></div>
         <div class="steps">
@@ -33,10 +39,15 @@
             <div class="icon trophyy"></div></div>
 
             <div class="image-container">
-            <div class="icon bell"></div>
-            <div class="icon belly"></div></div>
+            <div class="icon inbox"></div>
+            <div class="icon inboxy"></div></div>
         </div>
+        <!--<div class="overlay" id="overlay">
+        Overlay Content
+    </div>-->
     </div>
+    
     <script src="counter.js"></script>
+    <!--<script src="overlay.js"></script>-->
 </body>
 </html>

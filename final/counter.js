@@ -27,3 +27,22 @@ document.addEventListener('DOMContentLoaded', () => {
     // to ze zacne automaticky po spusteny
     startCounting();
 });
+
+document.addEventListener('DOMContentLoaded', function() {
+    let progressBar = document.getElementById('progress-bar');
+    let width = 20; // zaciatocne percenta
+
+    function updateProgressBar(percentage) {
+        progressBar.style.width = percentage + '%';
+    }
+
+    
+    updateProgressBar(width);
+
+ 
+    setTimeout(() => {
+        width = 90;
+        updateProgressBar(width);
+    }, 2000);
+});
+
